@@ -116,10 +116,10 @@
    <!-- 셀 병합  열(세로) 병합 위에서 아래로 병합 (rowspan),  행 (가로)병합(colspan)왼쪽에서 오른쪽으로 병합 되면서 오른쪽부분에 숫자or글자는 생략이된다.-->
    <table : border="1" height="350px" width="350px">  
         <tr>   <!--엑셀의 2행을 나타낸다-->
-            <td rowspan="2">1</td><td colspan="2">2</td> <!--cols="N" N행의 N만큼 병합갯수-->
+            <td rowspan="2">1</td><td colspan="2">2</td> <!--cols="N" N행의 N만큼 병합갯수,1행3열이 병합해서 없어짐-->
         </tr>
         <tr>
-            <td>5</td><td>6</td>
+            <td>5</td><td>6</td><!--2행1열이 병합해서 없어짐-->
         </tr>
     </table>
 
