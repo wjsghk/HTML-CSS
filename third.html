@@ -1,0 +1,147 @@
+<!DOCTYPE html><!--느낌표 tap 키 누르면 자동으로 기본형태가 생성된다.-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--텍스트관련 태그들 MD REFERENCE 클릭 후 열기 설명을 해주는 용도 -->
+    <!--단축키 alt + B 같이 누르면 실행된다.,블럭처리후 tab 눌면 블럭된 부분 들여 쓰기, tab +shift 누르면 내어쓰기-->
+    <h1>제목 표시하기 </h1><!--글씨 크기가 다르고 자동으로 줄이 바뀐다-->
+    <h2>제목 표시하기 </h2>
+    <h3>제목 표시하기 </h3>
+    <h4>제목 표시하기 </h4>
+    <h5>제목 표시하기 </h5>
+    <h6>제목 표시하기 </h6>
+
+    ☎ 02)000-0000 자기소개 29살 ㅇㅂㅇ<!--줄이 안바뀌고 한 줄로 출력된다.-->
+    안녕하세요 
+    저는 홍길동입니다<br><!--줄 바꿈 태그다-->
+    사는 곳은 서울입니다 <br>
+
+    <hr><!--(=<hr/>)왼쪽에서 오른쪽으로 선이 생기면서 구분이된다.-->
+    <hr/>
+    <p>첫번째 문단</p><!--줄 사이에 공백이 생기면서 문단생성된다-->
+    <p>두번째 문단</p>
+    <p>세번째 문단</p>
+
+    <pre><!--<br>,<p>사용 안하고도 작성한 그대로 보여준다--><!--한칸 띄어쓰기만 보여준다-->
+    내가 그의 이름을 불러 주기 전에는 
+    그는 다만 
+    하나의 몸짓에 지나지 않았다.
+    
+    내가 그의 이름을 불러 주었을때
+    그는 나에게로 와서 
+    꽃이 되었다.
+    홍    길&nbsp;                   동<!--&nbsp; 사용하면 여러개 띄어쓰기 적용된다.-->
+    </pre>
+    <br>
+
+    <strong> 글자강조 </strong> <!--<b></b>와 같다-->
+    <br>
+    
+    <em> 글자기울기</em> <!--<i></i>와 같다-->
+    <br><br>
+    
+    <q>인용구문</q> <!--"인용구문"-->
+    <br><br>
+    
+    <mark>중요구문</mark><!--중요구문에 형관펜처리 되게 출력-->
+    <br><br>
+    
+    <span>일부 영역에 효과를 주기위해  사용</span>
+    <br><br>
+    
+    목록을 표시하는 태그들<!--ul,ol,dl,dt,dd-->
+    <ul>
+        <li>JAVA</li>
+        <li>ORCLE</li>
+        <li>HTML</li>
+    </ul>
+    
+    <ol type="a"> <!--ol은 기본형태는 숫자지만 type="a"를 붙이면 알파벳 순서로 바뀐다.-->
+        <li>JAVA</li>
+        <li>ORCLE</li>
+        <li>HTML</li>
+    </ol>
+
+    <ul>
+        <li>1일차
+            <ol type="a">
+                <li>해녀 박물관</li>
+                <li>낚시 체험</li>
+            </ol>
+        </li>
+        <li>2일차
+           <ol>
+            <li>용눈이오름</li>
+            <li>만장굴</li>
+           </ol>
+        </li>
+    </ul>
+
+    <dl><!--ex) 단어  풀이 목차-->
+        <dt>hello</dt>
+        <dd>
+            1.(만났을 때의 인사로) 안녕(하세요), 인사, (전화에서나 남의 관심을 끌 때) 여보세요<br>
+            2.이런, 어머나(놀라움을 나타냄)<br>
+            3.얼씨구(상대방의 말이 바보 같거나, 상대방이 주의를 기울이지 않고 있다고 여길 때) (→golden hello)<br>
+        </dd>
+    </dl>
+
+    <!--table tag 행과열을 나타내는 태그--> 
+    <figure>
+            <figcaption>
+                <p>총 생산량</p>
+            </figcaption>
+        <table : border="1" height="300px" width="300px">   <!--' : border="N" ' 추가하면서 표가 생기고 ,height="Npx or %" width="Npx or %"  추가하면서 표의 크기 조정 px = %은 크기가 다르다. -->
+            <caption> <!--제목을 만들어주는 태그-->
+                <strong>생산년도</strong>
+            </caption>
+            <tr>   <!--엑셀의 3행을 나타낸다-->
+                <td>1</td><td>2</td><td>3</td><td>4</td>  <!--엑셀의 4열을 나타낸다-->
+            </tr>
+            <tr>
+                <td>5</td><td>6</td><td>7</td><td>8</td>
+            </tr>
+            <tr>
+                <td>9</td><td>10</td><td>11</td><td>12</td>
+            </tr>
+        </table>
+   </figure>
+   <br><br>
+
+   <!-- 셀 병합  열(세로) 병합 위에서 아래로 병합 (rowspan),  행 (가로)병합(colspan)왼쪽에서 오른쪽으로 병합 되면서 오른쪽부분에 숫자or글자는 생략이된다.-->
+   <table : border="1" height="350px" width="350px">  
+        <tr>   <!--엑셀의 2행을 나타낸다-->
+            <td rowspan="2">1</td><td colspan="2">2</td> <!--cols="N" N행의 N만큼 병합갯수-->
+        </tr>
+        <tr>
+            <td>5</td><td>6</td>
+        </tr>
+    </table>
+
+    <br><br><!--논리테이블 장애인 사용할 수 있게  음성서비스 진행태그-->
+    <table : border="1" height="350px" width="350px">  
+        <thead>
+            <tr>   
+                <td>1</td><td>2</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3</td><td>4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>5</td><td>6</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+</body>
+</html>
