@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <h1>프론트엔드 개발자 지원서</h1>
+            <br>
+            <p>HTML,CSS,javascript에 대한 기술직 이해와 경험이 있는 분을 찾습니다.</p>        
+            <hr><br>
+            <h3>개인정보</h3>
+            <ul type="none">
+                <li>
+                    <label for="name">이름 :</label>
+                    <input type="text" id="name"    placeholder="공백없이 입력">
+                </li>
+                <li>
+                    <label for="number">연락처 :</label>
+                    <input type="text" id="number">
+                </li>
+            </ul>
+            <!-- <br>
+            <label for="name"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이름 : </label> &nbsp;
+            <input type="text" name="name" id="name" placeholder="공백없이 입력하세요"> 
+            <br>
+            <label for="number">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;연락처 : </label>
+            <input type="number" name="number" id="number" > 
+            <br><br> -->
+
+            <h3>지원분야</h3>           
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="subject"  value="웹 퍼블리싱">웹 퍼블리싱
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="subject"  value="웹 어플리케이션 개발">웹 어플리케이션 개발
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="subject"  value="개발환경개선">개발환경개선
+            <br><br>
+
+            <h3><label for="지원동기">지원동기</label></h3>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="content" id="content" rows="5" cols="70" placeholder="지원동기"></textarea>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="접수하기" onclick="alert('접수가 완료됐습니다')"><!--action속성을 공백으로 두면 메세지창이 뜬다-->
+            <input type="reset" value="다시쓰기"onclick="alert('돌아가기')">
+        </fieldset>
+    </form>
+</body>
+</html>

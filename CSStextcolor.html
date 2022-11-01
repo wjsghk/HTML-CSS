@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        /* 선택자(속성:값; 속성:값; 속성:값;) */
+       
+        /* 전체선택자 */
+        /* *{color:blue;}  */
+       
+        /* p{font-size: 50px;} */      /* p 태그 적용 */
+        /* h1{font-size: 70px;} */      /*h1 적용 */
+       
+        /* 클래스(class) 선택자 효과를 여러개 적용가능 */
+        .bluetext {color :blue;} /*클래스 정의 한거*/
+        .redtext {color :brown;}
+        .textsize30 {font-size: 30px;}
+
+        /* 아이디 선택자(id) :하나만 적용가능 ex)textsize50 bluetext 같이 못쓴다.*/
+        #bluetext {color :blue;}
+        #textsize30 {font-size:30px;}
+        #textsize50 {font-size:50px;}
+
+        /* 그룹선택자 */
+        h1,h2,span{color: rgb(204, 238, 13);}
+        
+        /* 선택자우선순위  마지막으로 적용된게 적용된다 단)!important를 넣어주면 넣어준 태그에 우선순위가 생긴다..*/
+        /* p{color: crimson !important;}
+        p{color: aquamarine;} */
+
+        /* css의 상속 : 일부상속은 상속에서 제외(border속성) */
+        /* body{color: red;} */
+    </style>
+</head>
+<body>
+    
+    기본글자 입니다.
+    <p class="bluetext textsize30">1.p태그 입니다.</p>
+    <p class="redtext textsize30">2.p태그 입니다.</p>
+
+    <p id= "textsize30">3.p태그 입니다.</p>
+    <p id= "textsize50 bluetext">4.p태그 입니다.</p>
+    
+    <p>5.p태그 입니다.</p>
+
+    <h1>h1태그 입니다.</h1>
+    <h2>h1태그 입니다.</h2>
+    <span>span태그 입니다.</span>
+    
+
+</body>
+</html>

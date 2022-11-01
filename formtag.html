@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form : 1)작성하는 방식,2)선택방식 -->
+    <form method="" action="http://www.naver.com" name=""><!--input type="submit"의 회원가입을 누르면 맨위에 action의 속성으로 넘어간다.-->
+        <fieldset><!--박스처리해서 구분해주는 코드-->
+            <legend>개인정보</legend>
+            <label for="id">아이디(필수)</label> <!--아이디 입력칸 생성된다. type를 text사용하면 문자 그래도 표시   -->
+            <input type="text" name="id" id="id" autofocus required placeholder="아이디입력"/>  <!-- autofocus required => 필수적으로 작성해야 다음 페이지로 넘어갈수있다 ,placeholder="입력시 글자가 사라짐"-->
+            <br>
+            <label for="pwd">비밀번호(4~8글자)</label><!--password를 사용하면 *표시가된다 -->
+            <input type="password" name="pwd" id="pwd" size="50" maxlength="8" minlength="4" placeholder="-은 빼고 입력"> <!--속성들은 다른 타입에도 다 적용가능하다-->
+            <br>
+            <label for="time">상영시간</label>
+            <input type="text" name="time" id="time" value="오전 09:00 ~ 12:00" readonly><!--value는 수정이 가능하다 vs 'placeholder' vs readonly하면서 읽기만 가능하고 입력은 안된다.-->
+            <br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>체크표시</legend>
+            <!-- 라디오버튼 선택을 처리하는 것 뒤에 이름 부분만 다르고 name속성은 동일하게 적용-->
+            <input type="radio" name="subject"  value="JAVA">JA
+            <input type="radio" name="subject"  value="HTML">HTML
+            <input type="radio" name="subject"  value="sql">SQL
+            <br>
+
+            <input type="radio" name="grade"  value="1">1학년
+            <input type="radio" name="grade"  value="2">2학년
+            <input type="radio" name="grade"  value="3" checked>3학년 <!-- checked 하면 기본적으로 체크가 된 상태가 됨-->
+            <br>
+
+            <!-- 체크박스 라디오와 차이점으로 중복으로 선택 가능하다. -->
+            <input type="checkbox" name="hobby"  value="축구">축구
+            <input type="checkbox" name="hobby"  value="야구">야구
+            <input type="checkbox" name="hobby"  value="농구">농구
+            <br>
+        </fieldset>
+
+        <!-- 이메일표시 -->
+        <label for="email">email :</label>
+        <input type="email"  name="email"  id="email">
+        <br> 
+        
+        <!-- 주문수령 창 오른쪽에 갯수 조정하는 표시가 있다. -->
+        <label for="number">주문수령</label>
+        <input type="number" name="number" id="number">
+        <br>
+
+        <!--색상표시하기-->
+        <label for="color">색상</label>
+        <input type="color" name="color" id="color">
+        <br><br>
+
+        <!-- 날짜표시하기 -->
+        <label for="date">날짜</label>
+        <input type="date" name="date" id="date">
+        <br>
+
+        <!-- 날짜,시간표시하기 -->
+        <label for="start">시작일</label>
+        <input type="datetime-local" name="start" id="start">
+        <label for="end">종료일</label>
+        <input type="datetime-local" name="end" id="end">
+        <br><br>
+
+        <!-- 직업선택 -->
+        <label for="job">직업선택</label>
+        <select name="job"  > <!--size'N' N만큼 보기가 보여진다.카테고리를 만들때 이용한다-->
+            <option value="0">--선택--</option>
+            <option value="1">--기자--</option>
+            <option value="2" selected>--개발자--</option> <!--selected를 사용하면 셀렉부분이 선택사항의 예제로 나온다.-->
+            <option value="3">--경호원--</option>
+        </select>
+        <br><br>
+
+        <!-- 상품소개 -->
+        <label for="content">상품소개</label>
+        <textarea name="content" id="content" rows="2" cols="70" placeholder="상품소개"></textarea>
+        <br><br>
+        
+        <!-- 첨부파일 -->
+        <label for="fileup">첨부파일</label>
+        <input type="file" multiple> <!--multiple 목록을 보여준다-->
+        <br><br>
+        
+        <!-- 버튼 -->
+        <input type="submit" value="회원가입"><!--submit=>회원가입을 누르면 맨위에 action의 속성으로 넘어간다.-->
+        <input type="reset" value="취소"> <!-- 취소 누르면 작성한거 리셋 된다-->
+        <input type="button" value="아이디찾기" onclick="alert('아이디 찾기')"><!--버튼을 누르면 내가 지정할 수 있는 역할을 할 수 있다.-->
+        <button type="button"  onclick="alert('돌아가기')"><!--onclick=>누르면 메시지 창이 뜬다.-->
+        <br><br>
+        
+        
+    </form>
+</body>
+</html>

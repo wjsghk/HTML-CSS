@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 글꼴관련  */
+        /* .fontstyle{font-family: 궁서체,돋움;}
+        궁서가 적용이 안되면 돋움이 적용된다 */
+        
+        /* 웹 폰트 */
+        @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap'); 
+        /* 아래내리다 보면 select regular -> import ->복.붙 */
+        .fontstyle{font-family: 'Fasthand', cursive;}
+
+        /* 글자크기 */
+        /* 1)절대크기 : px.pt */
+        /* p{font-size: 10px;} */
+        
+        /* 2)상대크기 : em,%  (1em = 100%)*/
+        p{font-size: 3em;}
+
+        /* 글자굵기 */
+        p{font-weight: bold;}
+        
+        /* 글자스타일 기울기*/
+        p{font-style: italic;}
+       
+        /* 한번에 여러개 적용시키기 줄 나눠서 해준다. */
+        p{font-size: 20px;
+            font-family : 궁서;}
+        
+        /* 글자의 밑줄긋기(ex, underline,none(삭제),line-through(글자 가운데에 선이 통과)) */
+        p{text-decoration: underline;}
+        
+        /* 글자에 그림자 효과 */
+        /* text-shadow : 가로거리 세로이동거리 번짐정도 그림자색깔; */
+        .shadow1 {
+            text-shadow: 1px 1px 3px; /*그림자색깔 넣기전 ;으로 닫고 글자에 색 넣었다*/ 
+            color :coral;
+            
+        }
+        .shadow2 {
+            text-shadow: 5px 5px 3px cornflowerblue; 
+        }
+
+        /* 글자간격 */
+        .letter{ letter-spacing: 0.5em;}
+
+    </style>
+</head>
+<body>
+    <!-- CSS의 속성 -->
+    기본 글자입니다.
+    <p>브라우저 기본 글꼴</p>
+    <p class="fontstyle">글꼴을 적용한 상태 asdsadsad;</p>
+    <h1 class="shadow1">HTML5</h1>
+    <h1 class="shadow2">HTML5</h1>
+    <h1 class="letter">HTML5</h1>
+</body>
+</html>
