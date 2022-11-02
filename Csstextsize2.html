@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            /* 글자 뒷배경 설정 */
+        /* p{
+            width: 150px;
+            background-color: aqua;
+        } */
+        
+        /* 공백과 줄바꿈 속성 */
+        /* white-space : normal | nowrap | pre | pre-wrap| pre-line */
+        .normal {white-space: normal;}
+        .nowrap {white-space: nowrap;}
+        .pre {white-space: pre;}
+        .prewrap {white-space: pre-wrap;}
+        .preline {white-space: pre-line;}
+
+        /* 테두리 색깔 속성 */
+        /* p{
+            border: 1px solid red;
+        } */
+
+        /* 텍스트정렬 : 수평정렬text-align : left | right | center |justify  */
+        /* justify: 양쪽정렬 */
+        .left {text-align: left;}
+        .right {text-align: right;} 
+        .center {text-align: center;}
+        .justify {text-align: justify;}
+        
+
+        /* 줄(행)(=글자 위,아래 간의)간의 간격 */
+         .line{line-height: 3em;}
+        
+         /*text-align : 글 가운데정렬*//*line-height :줄 가운데정렬*/
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+            text-align: center;
+            line-height : 150px;
+
+         } 
+        
+        /* 글자가 넘치는 기능 제어 */ 
+        /*생략표시 속성  
+            white-space + overflow + text-overflow  같이 사용 해야 생략가능함=>'...' 생성된다*/
+        p{
+            border : 1px solid rebeccapurple;
+            width : 300px;
+            white-space: nowrap;
+            overflow:hidden;
+            text-overflow: ellipsis;
+            }
+
+
+        /* ...부분에 마우스를 갖다대면 생략된 글자가 나타난다  */
+        p:hover{
+            overflow: visible;
+        }
+    </style>
+</head>
+<body>
+    기본글자입니다.<br>
+    <!-- /* 공백과 줄바꿈 속성 */ -->
+    <!-- <p class="normal">요소의 공백문자를 어떻게 처리할 지를 정의합니다.</p>
+    <p class="nowrap">요소의        공백문자를 어떻게 처리할 지를 정의합니다.</p>
+    <p class="pre">요소의           공백문자를 어떻게 처리할 지를 정의합니다.</p>
+    <p class="prewrap">요소의                 공백문자를        어떻게 처리할 지를 정의합니다.</p>
+    <p class="preline">요소의                 공백문자를       어떻게 처리할 지를 정의합니다.</p> -->
+    
+    <!-- /* 텍스트정렬 : 수평정렬 */ -->
+    <!-- <p class="left">
+        Apple is the largest technology company by revenue (totaling US$365.8 billion in 2021) and, as of June 2022, is the world's biggest company by market ...
+        Apple is the largest technology company by revenue (totaling US$365.8 billion in 2021) and, as of June 2022, is the world's biggest company by market ...
+    </p>
+    <p class="right">
+        Apple is the largest technology company by revenue (totaling US$365.8 billion in 2021) and, as of June 2022, is the world's biggest company by market ...
+        Apple is the largest technology company by revenue (totaling US$365.8 billion in 2021) and, as of June 2022, is the world's biggest company by market ...
+    </p>
+    <p class="center">
+        Apple is the largest technology company by revenue (totaling US$365.8 billion in 2021) and, as of June 2022, is the world's biggest company by market ...
+        Apple is the largest technology company by revenue (totaling US$365.8 billion in 2021) and, as of June 2022, is the world's biggest company by market ...
+    </p>
+    <p class="justify">
+        Apple is the largest technology company by revenue  (totaling US$365.8 billion in 2021) and, as of June 2022, is the world's biggest company by market ...
+        Apple is the largest technology company by revenue (totaling US$365.8 billion in 2021) and, as of June 2022, is the world's biggest company by market ...
+    </p> -->
+    
+    <!-- /* 줄(행)(=글자 위,아래 간의)간의 간격 */ -->
+    <p class="line">
+        Apple is the largest technology company by revenue (totaling US$365.8 billion in 2021) and, as of June 2022, is the world's biggest company by market ...
+        Apple is the largest technology company by revenue (totaling US$365.8 billion in 2021) and, as of June 2022, is the world's biggest company by market ...
+    </p>
+
+    <p class="box">
+        asdfsadfsdfsdfas
+    </p>
+
+    <P>
+        지난해 MLB 데뷔 후 올해 2년 차를 맞이한 김하성은 주전 유격수 페르난도 타티스 주니어의 
+        부상 이탈로 주전 유격수 자리를 꿰찬 뒤 팀의 핵심선수로 자리매김했다. 
+        정규리그 150경기에 출전해 타율 .251 11홈런 59타점을 기록했다.
+    </P>
+
+</body>
+</html>

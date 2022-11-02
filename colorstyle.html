@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 색상속성 방법 4가지 */
+    /* 1.생상을 직접지정
+    2.16진수를 지정
+    3.rgb()
+    4.rgba() */
+    .colorstyle{ 
+        /* color : red;
+        color : rgba(red, rgb(128, 0, 111), rgb(81, 255, 0));}
+        color : #998A00; */
+        /* color : rgb(231, 130, 15) */
+        }
+
+
+        /* background-repeat :repeat-y  y축으로 반복
+                              repeat-x; x축으로 반복
+                              no-repeat 반복없이
+         */
+         body{
+            /* background-color :rgb(5, 1, 1);
+            background-image: url(images/사과.jpg);
+            background-repeat :no-repeat; */
+            /* background-repeat :repeat-x; */
+            /* background-repeat :repeat-y; */
+            /* background-size: 450px 450px;
+            background-position :100px 100px; */
+
+            font-family:"맑은 고딕";
+        }
+        .container{
+            background-image: url(images/사과.jpg);
+            background-repeat: no-repeat;
+            width: 600px;
+            height: 400px;
+            padding: 20px;
+            position: relative;
+        }
+        .content{
+            position: absolute;
+            top: 300px;
+            width: 90%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        h1{
+            font-size: 30px;
+            text-align: center;
+        }
+        
+</style>
+<body>
+    <p class="colorstyle">글자 색상 지정하기</p>
+    <div class="container">
+        <div class="content">
+            <h1>하루 한 알의 사과는 의사를 멀리한다.</h1>
+        </div>
+    </div>
+</body>
+</html>

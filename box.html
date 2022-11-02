@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>  
+        /* div{
+            background: aqua;
+        }
+        span{
+            background: cornflowerblue;
+        } */
+
+        /* width,height의 속성은 블록레벡의 요소에만 적용가능하다. */
+        
+        /* .box1{
+            width: 200px;
+            height: 100px;
+            background-color: burlywood;
+        } */
+        /* .box2{
+            width: 50px;
+            height: 100px;
+            background-color: rgb(135, 176, 222);
+        } */
+        /* .box3{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(135, 176, 222);
+        } */
+
+        /* 레벨변경속성 */
+        /* display : inline | block | inline-block */
+        img{
+            display: block;
+        }
+       /* inline은 가로로 바꿔줌 vs block 세로로 바꿔줌 */
+        li{
+            display: inline-block;
+            width:80px;
+            height: 13px;
+        }
+
+        /* box1~6를 사용할 때 주석풀기 */
+        /* div{
+            width:200px;
+            height : 200px;
+            margin: 15px;
+        } */
+
+        /* 경계선 속성 */
+        /* border : 선의굵기 선의종류 선의색깔 */ 
+        
+        /* 둥근사각형속성 */
+        /* border-radius : 시계방항 기준으로 각 모서리 값1,값2,값3,값4 */
+
+        /* 박스모델 그림자 속성 */
+        /* box-shadow: x좌표  y좌표  흐림정도  번짐정도  그림자색깔 */
+
+
+        /* 4개 모서리를 동일하게 할 경우 한개만 적어도 된다.30px 30px 30px 30px;*/
+        /* .box4{
+            border: 1px solid red;
+            border-radius :  30px;    
+            box-shadow : 2px 2px 10px 10px black;
+        } */
+        /* 2개를 이용할경우 1번,3번   2번,4번 */
+        /* .box5{
+            border : 3px double blue; 
+            border-radius :  30px 50px   
+        } */
+        /* 1번   2,4번   3번*/
+        /* .box6{
+            border: 5px dotted orange; 
+            border-radius : 30px 110px 70px;    
+        } */
+       
+        /* 박스7~10 이용할 떄 주석풀기 */
+        /* div{
+            width:200px;
+            height : 100px;
+            background-color: orange;
+            margin: 15px;
+        } */
+
+        /*4개 모서리를 동일하게 할 경우 한개만 적어도 된다.30px 30px 30px 30px;*/
+        .box7{
+            margin: 10px;
+            padding: 10px;
+        }
+        /*2개를 이용할경우 1번,3번   2번,4번 */
+        .box8{
+            padding: 10px 10px; 
+        }
+        /* 1번   2,4번   3번*/
+        .box9{
+            padding: 10px 10px 50px;
+        }
+
+        #container{
+            width: 600px;
+            background-color: aquamarine;
+        }
+    </style>  
+<body>
+    
+    <!-- 박스모델 -->
+    1.블록레벨 : 행을 전체 크기 표현
+    <!-- <p></p>,<h1></h1>,<ul></ul>,<ol></ol>,<table></table> -->
+    <!-- <div>블록레벨</div> -->
+    
+    2.인라인레벨 :요소의 내용만큼만 크기를 표현
+    <!-- <img> ,<input>,<button></button>,<label></label> --><br>
+    
+    <div class="box1">블록레벨</div>
+    <div class="box2">블록레벨</div>
+    <span class="box3">인라인레벨</span>
+
+    <img src="1.jpg">
+    <img src="2.jpg">
+    <img src="3.jpg">
+
+    <ul>
+        <li>메뉴 1</li>
+        <li>메뉴 2</li>
+        <li>메뉴 3</li>
+    </ul>
+    
+    <!-- <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div> -->
+
+    <div class="box7">padding은 요소의 네 방향 안쪽 여백 영역을 설정. padding-top, -right,-bottom, -left의 단축 속성.</div>
+    <div class="box8">padding은 요소의 네 방향 안쪽 여백 영역을 설정. padding-top, -right,-bottom, -left의 단축 속성.</div>
+    <div class="box9">padding은 요소의 네 방향 안쪽 여백 영역을 설정. padding-top, -right,-bottom, -left의 단축 속성.</div>
+    
+</body>
+</html>
