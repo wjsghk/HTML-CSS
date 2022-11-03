@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        /* div 전체에 padding을 둬서 각 박스에 padding를 넣지않아도 된다 */
+        div{
+            border : 2px solid rgb(23, 144, 243);
+            padding: 20px;
+        }
+
+        /* css로 전체 컨테이너 */
+        #container{
+            width: 960px;
+            /* 0은 1,3면 auto 2,4면 auto로 할 때 화면을 늘리고 줄일때 고정해준다.*/
+            margin: 0 auto;				
+        }
+
+        /* 사이트제목이 헤드 */
+        #header{
+            margin-bottom: 20px;
+        }
+
+        #sidebar1{
+            width: 150px;
+            float: left;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            background-color: rgb(102, 44, 3);
+        }
+        
+        #contents{
+            width: 490px;
+            float: left;
+            margin-bottom: 20px;	
+            background-color: bisque;			
+        }	
+
+        #sidebar2{
+            width: 150px;
+            float: right;
+            margin-bottom: 20px;
+            background-color: rgb(243, 198, 166);
+        }
+
+        #footer{
+            clear: both;
+        }
+    </style>
+<body>
+    <!-- tip!! 박스가 코드에 맞게 안움직일 때 style부분을 주석처리하고 박스가 어디에 포함되어있는지 확인하고 <div></div>가 위치에 맞게 됐는지 확인해보기   -->
+    <div id="container">
+        <div id="header">
+			<h1>사이트 제목</h1>
+		</div>
+		
+		<div id="sidebar1">
+			<h2>사이드 바1</h2>
+            <ul>
+                <li>모든1</li>
+				<li>모든2</li>
+				<li>모든3</li>
+				<li>모든4</li>
+            </ul>
+        </div>
+		
+		<div id="sidebar2">
+				<h2>사이드 바2</h2>
+				<ul>
+					<li>모든1</li>
+					<li>모든2</li>
+					<li>모든3</li>
+					<li>모든4</li>
+				</ul>
+		</div>
+		
+		<div id="contents">
+			<h2>본문</h2>
+            <p>재산권의 행사는 공공복리에 적합하도록 하여야 한다. 정부는 회계연도마다 예산안을 편성하여 회계연도 개시 90일전까지 국회에 제출하고, 국회는 회계연도 개시 30일전까지 이를 의결하여야 한다.</p>
+
+            <p>대통령의 임기가 만료되는 때에는 임기만료 70일 내지 40일전에 후임자를 선거한다. 제2항과 제3항의 처분에 대하여는 법원에 제소할 수 없다. 언론·출판에 대한 허가나 검열과 집회·결사에 대한 허가는 인정되지 아니한다.</p>
+		</div>
+		
+		<div id="footer">
+			<h2>푸터</h2>
+            <p>이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다.</p>
+		</div>
+    </div>
+</body>
+</html>

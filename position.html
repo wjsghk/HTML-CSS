@@ -6,9 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* 정렬속성 블록레벨과 인라인레벨은 옆을 두지 못하지만 float를 사용하면 옆으로 이동이가능하다*/
+        /* 정렬속성 블록레벨과 인라인레벨은 옆을 두지 못하지만 float를 사용하면 옆으로 이동 가능하다*/
+        /* 바디에 class="left-img" */
         .left-img{
             float: left;
+        }
+
+        .box1{
+            padding: 20px;
+            background-color: aqua;
+            float: left;
+        }
+        .box2{
+            padding: 20px;
+            background-color: rgb(194, 178, 85);
+            float: left;
+        }
+        .box3{
+            padding: 20px;
+            background-color: rgb(6, 49, 245);
+            float: left;
+        }
+        .box4{
+            padding: 20px;
+            background-color: rgb(116, 45, 231);
+            float: right;
+        }
+        /* clear : both;를 사용하면 앞 float에 의해 딸려가지 않는다. */
+        .box5{
+            padding: 20px;
+            background-color: red;
+            clear: both;
         }
     </style>
 </head>
@@ -19,5 +47,12 @@
         심근경색 예방, 혈당 저하, 암 예방. 
         [일년감 토마토] 토마토는 우리말로 '일년감'이라 하며,
          한자명은 남만시(南蠻枾)라고 한다.</p>
+
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+    <div class="box4">박스4</div>
+    <div class="box5">박스5</div>
+
 </body>
 </html>

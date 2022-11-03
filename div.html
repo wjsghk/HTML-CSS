@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+         /* width: 100%;으로 설정해서 float가 딸려오지 못함 */
+         /* position : static | relative | absoulte| fixed| */
+         /* fixed를 설정하면 인터넷에 스크롤을 아무리 내려도 그 위치에 고정되어 보여진다. */
+         /* top| left | right| bottom은  position이랑 같이 써야한다. */
+        .box1{
+            position :absolute;
+            top: 20px;
+            left:50px;  
+            float: left;
+            width: 100px;
+            background-color: yellow;
+            margin-right: 10px;
+            padding: 20px;
+        }
+
+        .box2{
+            position:absolute;
+            top: 50px;
+            left: 80px;
+            float: left;
+            width: 300px;
+            background-color: red;
+            padding: 20px; 
+        }
+
+        /* 부모요소는 반드시 position relative 해야하고,그 자식은 position :absolute 해야한다 */
+        .wrap{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+        }
+        /* wrap⊃box */
+        /*wrap안 각 끝에 카드 채워넣기 */
+        .box{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+        }
+        #card1{
+            top: 0px;
+            left: 0px;
+        }
+        #card2{
+            top: 0px;
+            right: 0px;
+        }
+        #card3{
+            bottom: 0px;
+            right: 0px;
+        }
+        #card4{
+            bottom: 0px;
+            left: 0px;
+        }
+        /* wrap 넓이,높이가 각각 300픽셀으로 만들었고 wrap가 부모속성이니까 wrap를 기준으로 */
+        #card5{
+            top: 125px;
+            right: 125px;
+        }
+        #card6{
+            position: fixed;
+            top: 5px;
+            right : 5px;
+
+        }
+
+        /* 이미지파일관련 css 보이기/숨기기 */
+        /* visibility : hidden | visible */
+        /* display : none|block */
+
+        .invisible{
+            visibility: hidden;
+            display: none;
+        }
+
+        img{
+            position :absolute
+        }
+        
+        /* z-index를 사용하면 제일 앞에 나온다.숫자가 클 수록 앞에 나온다. */
+        .img0{
+            top: 0px;
+            left : 0px;
+            z-index: 10;
+        }
+
+        .img1{
+            top: 70px;
+            left : 70px;
+            z-index: 15;
+        }
+
+        .img2{
+            top: 90px;
+            left : 90px;
+        }
+    </style>
+<body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    
+        <div class="wrap">
+            <div class="box" id="card1"></div>
+            <div class="box" id="card2"></div>
+            <div class="box" id="card3"></div>
+            <div class="box" id="card4"></div>
+            <div class="box" id="card5"></div>
+        </div>
+
+        <div class="box" id="card6"></div>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        <p>top| left | right| bottom은  position</p>
+        
+        <img class = "img0"src="1.jpg">
+        <img class="img1" src="2.jpg">
+        <img class="img2" src="3.jpg">
+        
+</body>
+</html>
