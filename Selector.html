@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 선택자      
+        1. 전체 선택자 : *{}
+        2. 태그 선택자 : p{}
+        3.클래스선택자 : .color{}
+        4.아이디선택자 : #textsize
+        5. 그룹 선택자 : h1,p{} =>h1 and p 둘 다 포함한다 vs ','를 이용안하면 자식(하위)관계만 정한것
+        */
+
+        /* 연결선택자 */
+        /* 후손(하위 전체)vs자식(자식 하나만) */
+        
+        /* 후손선택자 */
+        /* section ul{
+            border:1px solid red;
+        } */
+
+        /* 자식 선택자*/
+        /* section > p{
+            color: blue;
+        } */
+
+        /* 형제선택자 (바로 밑 아래 동생)ex <p>1번은 바로 밑 <ul> ,<p>2번p는 바로 밑 <ul>*/
+        /* p+ul{
+            background-color: yellow;
+        } */
+         
+        /* 모든 동생들 */
+        /* p~ul{
+            color: brown;
+        } */
+
+        /* 속성선택자*/
+        /* a[href]{
+            background-color: rgb(213, 241, 133);
+        }
+        a[target="_blank"]{
+            background-color: bisque;
+        } */
+
+        /* 동적클래스 선택자 a태그 종류 */
+        /* 1.link 2.visited-사이트 방문시 색 변환  3.hover -마우스를 갖다대면 밑줄이 보여짐 4.active-마우스 누른상태시 색 변환 */
+        /* 밑줄삭제 */
+        /* a:link{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+        a:active{ 
+            color: rgb(80, 11, 241);
+        }
+        a:visited{
+            color: coral;
+        }    */
+
+        /* 상태선택자 */
+        /* checked:선택시 글자 색 변환
+        input:checked + span{
+            color: rgb(171, 238, 16);
+        }  */
+        
+        
+        
+        /* 구조선택자 */
+        ul li{
+            float: left;
+            border: 1px solid black;
+            list-style-type: none;
+            width: 50px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* 띄어쓰기 주의 */
+        /*nth-child는 모든 자식(child) 요소 중에서 앞에서부터 n번째에 위치하는 자식(child) 요소를 모두 선택 홀수(2n+1), 짝수(2n)*/
+        li:nth-child(2n+1){
+            background-color: coral;
+        }
+
+        li:nth-child(2n){
+            background-color: rgb(195, 233, 27);
+        }
+
+        /* first-child는 모든 자식(child) 요소 중에서 맨 앞에 위치하는 자식(child) 요소를 모두 선택 */
+        li:first-child{
+            border-radius:15px 0 0 15px;
+        }
+
+        /* nth-last-child는 모든 자식(child) 요소 중에서 뒤에서부터 n번째에 위치하는 자식(child) 요소를 모두 선택 */
+        li:last-child{
+            border-radius:30%;
+        }
+        
+        p:hover{
+            color: crimson;
+        }
+        img:hover{
+            width: 400px;
+        }
+           
+    </style>
+</head>   
+<body>
+    <!-- 연결~속성샅태자 이용시 주석해제 -->
+    <!-- <section id="container">
+        <p>1번p</p>
+        <ul>
+            <li>직접통화</li>
+            <li>문자보내기</li>
+            <li>
+                <p>2번P</p>
+                <ul>
+                    <li>1인</li>
+                    <li>2인</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="#" target="_blank">HTML</a></li>
+            <li><a href="#">JAVA</a></li>
+        </ul>
+    </section> -->
+
+    <!-- 동적,상태클래스 사용시 주석해제 -->
+    <!-- <a href="http://www.naver.com">네이버</a>
+    <br>
+    <a href="http://www.daum.net">다음</a>
+    <br>
+    <a href="http://www.goole.co.kr">구글</a>
+    <br>
+    <input type="radio" name="hobby"><span>운동</span>
+    <input type="radio" name="hobby"><span>독서</span> -->
+
+ <!-- 구조선택자 사용시 주석해제  -->
+    <p>마우스가 올라옵니다.</p>
+    <ul>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+    </ul>
+    <img src="images/dog1.jpg">
+    <img src="images/dog1.jpg">
+
+    
+</body>
+</html>

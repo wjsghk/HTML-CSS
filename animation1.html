@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        /* div{ float: left; } */
+        /* 이동 */
+        /* translate */
+        /* .movex:hover{
+            transform: translateX(50px);
+        }
+        .movey:hover{
+            transform: translateY(30px);
+        }
+        .movexy:hover{
+            transform: translate(50px,30px);
+        } */
+
+        /* 확대(1.1)이상일때 /축소(0.9)이하일때 */
+        /* scale */
+        /* .scalex:hover{
+            transform: scaleX(1.2);
+        }
+        .scaley:hover{
+            transform: scaleY(1.2);
+        }
+        .scalexy:hover{
+            transform: scale(0.5);
+        } */
+
+        /* 회전 */
+        /* rotate */
+        /* .rotatex:hover{
+            transform: rotateX(50deg);
+        }
+        .rotatey:hover{
+            transform: rotateY(50deg);
+        }
+        .rotatexy:hover{
+            transform: rotate(20deg);
+        } */
+
+        /* 변환 */
+        /* transition-xxx */
+        /* .tr1{   
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+             transition-property: background-color, transform, width,height;
+            transition-duration: 2s,3s;
+            transition-delay: 1s;            
+        }
+        .tr1:hover{
+            width: 200px;
+            height:200px;
+            background-color: rgb(250, 7, 7);
+            transform: rotate(180deg);
+            border-radius:100%;
+        }  */
+        
+
+        /* antmation */
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            animation-name:change-bg;
+            animation-duration: 5s;
+            animation-delay: 1s;
+        }
+        /* 0% ~ 100% */
+        @keyframes change-bg{
+            /* 0%{}
+            50%{}
+            100%{} */
+            from{
+                background-color: chocolate;
+                border: 1px solid black;
+            }
+            to{
+                background-color: red ;
+                border-radius: 100px;
+                border: 2px double yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 이동 -->
+    <!-- <div class="movex"><img src="2.jpg"></div>
+    <div class="movey"><img src="2.jpg"></div>
+    <div class="movexy"><img src="2.jpg"></div> -->
+
+    <!-- 확대/축소 -->
+    <!-- <div class="scalex"><img src="3.jpg"></div>
+    <div class="scaley"><img src="3.jpg"></div>
+    <div class="scalexy"><img src="3.jpg"></div>
+     -->
+    <!-- 회전 -->
+    <!-- <div class="rotatex"><img src="1.jpg"></div>
+    <div class="rotatey"><img src="1.jpg"></div>
+    <div class="rotatexy"><img src="1.jpg"></div> -->
+
+    <!-- 변환 -->
+    <!-- <div class="tr1"></div> -->
+
+
+    <div></div>
+  
+</body>
+</html>

@@ -1,0 +1,44 @@
+.prod-list{
+    list-style-type:none;
+    margin: 0px;
+    padding: 0px;
+
+/* li(부모상속이여서 relative가 있어야한다 )⊃img⊃caption */
+/* 이미지픽셀 보기 : 이미지 오른쪽클릭 설정 */
+}
+.prod-list li{
+    position: relative;
+    float:left;
+    padding: 0px;
+    margin: 10px;
+    overflow: hidden;
+}
+.prod-list img{
+    margin: 0px;
+    padding: 0px;
+    float:left;
+    z-index: 5;
+}
+.prod-list .caption{
+    position: absolute;
+    top : 200px;
+    width: 300px;
+    height: 300px;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    z-index: 10;
+    color: aliceblue;
+    text-align: center;
+}
+
+.prod-list li:hover .caption{
+    opacity: 1;
+    transform: translateY(-200px);
+    transition-duration: 0.2s;
+}
+/* .prod-list.caption h1, .prod-list.caption p{
+    color: aliceblue;
+    text-align: center;
+} */
+
