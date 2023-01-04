@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.box{
+    width: 1130px;
+    margin: 0 auto;
+    border: solid 1px blue;
+
+}
+
+header{
+    border: solid 1px black;
+    height: 150px;
+}
+
+#main{
+    width: 745px;
+    height: 400px;
+    float: left;
+    border: solid 1px red;
+}
+
+aside{
+    border: solid 1px red;
+    height: 400px;
+    float: right;
+    width: 340px;
+}
+
+footer{
+    border: solid 1px red;
+    clear: both;
+    height: 150px;
+}

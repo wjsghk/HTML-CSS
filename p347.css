@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 980px;
+    margin: 0 auto;
+    border: solid 1px blue;
+}
+
+header{
+    border: solid 1px red;
+    height: 40px;
+
+}
+
+#menu_l{
+    float: left;
+    border: solid 1px red;
+}
+
+#menu_r{
+    float: right;
+    border: solid 1px red;
+}
+
+#main_image{
+height: 150px;
+border: solid 1px red;
+
+}
+
+#product_list{
+    height: 150px;
+    border: solid 1px red;
+}
+    
+#footer1 {
+    height: 50px;
+    border: solid 1px red;
+
+}
+   
+#footer2 {
+    height: 50px;
+    border: solid 1px red;
+
+}
+
+#footer3 {
+    height: 50px;
+    border: solid 1px red;
+
+}
